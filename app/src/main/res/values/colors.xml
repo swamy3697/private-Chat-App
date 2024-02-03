@@ -10,5 +10,13 @@
     <color name="darkgray">#333333</color>
     <color name="gray">#A5A5A5</color>
     <color name="orange">#FF9800</color>
+    <color name="btnBlue">#4D858C</color>
+
+    <color name="mygray">#D9D9D9</color>
+    <color name="online">#409553</color>
+    <color name="offline">#954540</color>
+    <color name="chatbg">#28312A</color>
+    <color name="msgbg">#3B5342</color>
+    <color name="timeStampColor">#C5B8B8</color>
 
 </resources>

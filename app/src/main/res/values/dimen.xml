@@ -3,4 +3,8 @@
     <dimen name="textsize">40sp</dimen>
     <dimen name="textPadding">20dp</dimen>
     <dimen name="margin">5dp</dimen>
+    <dimen name="msgfontsize">20sp</dimen>
+    <dimen name="msgtimeSize">15sp</dimen>
+
+
 </resources>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Calculator</string>
+    <string-array name="userList">
+        <item>
+            user1
+        </item>
+        <item>
+            user2
+        </item>
+    </string-array>
 </resources>
