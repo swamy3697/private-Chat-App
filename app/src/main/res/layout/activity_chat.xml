@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailsTab"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:visibility="gone"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mygray"
+            android:orientation="vertical"
+            android:weightSum="3"
+
+            >
+            <EditText
+                android:id="@+id/rootcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_for_edit_text"
+                android:hint="Enter Chat Code Here"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/codeWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="enter code"
+                android:textColor="@color/offline"
+                android:textSize="15sp" />
+
+            <EditText
+
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_for_edit_text"
+                android:hint="Enter Your Name Here"
+                android:layout_weight="1"
+                android:paddingLeft="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameWarning"
+                android:text="enter name"
+                android:textColor="@color/offline"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Save"
+                android:background="@drawable/bg_for_btn"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+
+                 />
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:elevation="2dp"
+        android:visibility="gone"
+        android:id="@+id/blueScreen"/>
+
+    <TextView
+        android:id="@+id/satusBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/online"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/chatbg"
+        app:layout_constraintTop_toBottomOf="@id/satusBar"
+        app:layout_constraintBottom_toTopOf="@id/inputBar"
+        android:id="@+id/recycleView"
+        />
+
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/mygray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="10"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:id="@+id/settings"
+            android:src="@drawable/settings"
+            android:padding="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"
+            app:tint="@color/btnBlue" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:minHeight="45dp"
+            android:id="@+id/message"
+            android:background="@drawable/bg_for_edit_text_red"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:src="@drawable/send"
+            android:padding="0dp"
+            android:id="@+id/send"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="bottom"
+            app:tint="@color/btnBlue" />
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/goDownBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_for_floating_action_btn"
+        android:clickable="true"
+        android:tint="@color/btnBlue"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recycleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="25dp"
+        tools:srcCompat="@drawable/go_down" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

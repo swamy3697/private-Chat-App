@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1035965747724",
+    "project_id": "private-chat-app-9495f",
+    "storage_bucket": "private-chat-app-9495f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035965747724:android:fdf7ad1ee525bebcf95429",
+        "android_client_info": {
+          "package_name": "com.swamy.calculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAwcIOJGeY7iQQUzWxK1BHOyJTJmEod9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
